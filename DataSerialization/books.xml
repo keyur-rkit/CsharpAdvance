@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Book>
+    <ISBN>101</ISBN>
+    <Title>Book101</Title>
+    <Author>Author101</Author>
+  </Book>
+  <Book>
+    <ISBN>102</ISBN>
+    <Title>Book102</Title>
+    <Author>Author102</Author>
+  </Book>
+  <Book>
+    <ISBN>103</ISBN>
+    <Title>Book103</Title>
+    <Author>Author103</Author>
+  </Book>
+</ArrayOfBook>
