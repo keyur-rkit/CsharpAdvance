@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystemInDepth", "FileSystemInDepth\FileSystemInDepth.csproj", "{22A4FE1E-0A88-4BCC-A05A-194583AE4C91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSerialization", "DataSerialization\DataSerialization.csproj", "{F375BB20-6280-469A-A4FB-10075392FEA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataSerialization", "DataSerialization\DataSerialization.csproj", "{F375BB20-6280-469A-A4FB-10075392FEA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaExpression", "LambdaExpression\LambdaExpression.csproj", "{0DD93860-B4F5-4C6A-BD80-3DAAFBAAE8A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{2ABB94B5-418F-4B7B-B227-D34CD4149107}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQDemo", "LINQDemo\LINQDemo.csproj", "{F84668AE-CD9F-4B89-AABA-17DE45455A49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{F375BB20-6280-469A-A4FB-10075392FEA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F375BB20-6280-469A-A4FB-10075392FEA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F375BB20-6280-469A-A4FB-10075392FEA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD93860-B4F5-4C6A-BD80-3DAAFBAAE8A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD93860-B4F5-4C6A-BD80-3DAAFBAAE8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD93860-B4F5-4C6A-BD80-3DAAFBAAE8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD93860-B4F5-4C6A-BD80-3DAAFBAAE8A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ABB94B5-418F-4B7B-B227-D34CD4149107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ABB94B5-418F-4B7B-B227-D34CD4149107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ABB94B5-418F-4B7B-B227-D34CD4149107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ABB94B5-418F-4B7B-B227-D34CD4149107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84668AE-CD9F-4B89-AABA-17DE45455A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84668AE-CD9F-4B89-AABA-17DE45455A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84668AE-CD9F-4B89-AABA-17DE45455A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84668AE-CD9F-4B89-AABA-17DE45455A49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

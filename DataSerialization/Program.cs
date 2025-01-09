@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 namespace DataSerialization
 {
     /// <summary>
-    /// 
+    /// Represents a book with properties for ISBN, title, and author.
     /// </summary>
     public class Book
     {
@@ -16,24 +16,26 @@ namespace DataSerialization
     }
 
     /// <summary>
-    /// 
+    /// Entry point for the program that demonstrates serialization and deserialization of book data.
     /// </summary>
     class Program
     {
         /// <summary>
-        /// 
+        /// Main method that performs serialization and deserialization of book objects.
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">Command line arguments (not used in this example).</param>
         public static void Main(string[] args)
         {
-            Book book1 = new Book { ISBN = 107 , Title = "Atomic Habits" , Author = "James Clear" };
+            // Creating a new Book object and serializing it into a JSON string
+            Book book1 = new Book { ISBN = 107, Title = "Atomic Habits", Author = "James Clear" };
 
             string jsonBook1 = JsonConvert.SerializeObject(book1);
-            
+
             Console.WriteLine($"book1 object in JSON : {jsonBook1}");
 
             Console.WriteLine();
 
+            // Deserializing the JSON string back into a Book object
             Book deserializedBook1 = JsonConvert.DeserializeObject<Book>(jsonBook1);
 
             Console.WriteLine($"Deserialized book1 object : ");
@@ -43,6 +45,7 @@ namespace DataSerialization
 
             Console.WriteLine();
 
+            // Parsing a JSON string into a JObject and manually accessing its properties
             string jsonBook2 = "{\"ISBN\":107,\"Title\":\"Atomic Habits\",\"Author\":\"James Clear\",\"Price\":999}";
 
             JObject book2 = JObject.Parse(jsonBook2);
@@ -59,17 +62,20 @@ namespace DataSerialization
 
             Console.WriteLine();
 
+            // Parsing a JSON array and iterating over its elements
             string jsonBookArr = "[{\"ISBN\":107,\"Title\":\"Atomic Habits\",\"Author\":\"James Clear\"},{\"ISBN\":109,\"Title\":\"One Piece\",\"Author\":\"Ichiro Oda\"}]";
 
             JArray bookArr = JArray.Parse(jsonBookArr);
             bookArr.ToList();
             Console.WriteLine("string to JSON array : ");
-            foreach( var item in bookArr ) 
+            foreach (var item in bookArr)
             {
                 Console.WriteLine(item);
             }
 
             Console.WriteLine();
+
+            // Creating a list of books and serializing it to an XML file
             List<Book> books = new List<Book>
             {
                 new Book { ISBN = 101 , Title = "Book101" , Author = "Author101"},
@@ -81,23 +87,28 @@ namespace DataSerialization
 
             XmlSerializer xs = new XmlSerializer(typeof(List<Book>));
 
-            using(FileStream fs = new FileStream(path,FileMode.Create))
+            // Serializing the list of books to an XML file
+            using (FileStream fs = new FileStream(path, FileMode.Create))
             {
                 xs.Serialize(fs, books);
                 Console.WriteLine("Books List serialize to XMl file books.xml");
             }
 
+            Console.WriteLine();
+
+            // Deserializing the XML file back into a list of Book objects
             List<Book> deserializedXMLBooks = new List<Book>();
 
-            using(FileStream fs = new FileStream(path, FileMode.Open))
+            using (FileStream fs = new FileStream(path, FileMode.Open))
             {
                 deserializedXMLBooks = (List<Book>)xs.Deserialize(fs);
                 Console.WriteLine("Books List deserialized from XMl file to List of books");
             }
 
-            foreach(var item in deserializedXMLBooks)
+            // Printing the deserialized book information
+            foreach (Book item in deserializedXMLBooks)
             {
-                Console.WriteLine(item);
+                Console.WriteLine($"ISBN: {item.ISBN}, Title: {item.Title}, Author: {item.Author}");
             }
 
         }
