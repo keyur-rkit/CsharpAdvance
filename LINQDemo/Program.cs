@@ -8,7 +8,13 @@
 
             // SelectInLINQ.RunSelectInLINQDemo();
 
-            FilteringInLINQ.FilteringInLINQDemo();
+            // FilteringInLINQ.FilteringInLINQDemo();
+
+            // SortingInLINQ.RunSortinhInLINQDemo();
+
+            // QuantifierInLINQ.RunQuantifierInLINQDemo();
+
+            SetOperationsInLINQ.RunSetOperationsInLINQDemo();
         }
     }
 }
