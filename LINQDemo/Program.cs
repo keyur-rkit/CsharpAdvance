@@ -14,7 +14,13 @@
 
             // QuantifierInLINQ.RunQuantifierInLINQDemo();
 
-            SetOperationsInLINQ.RunSetOperationsInLINQDemo();
+            // SetOperationsInLINQ.RunSetOperationsInLINQDemo();
+
+            // PartitioningInLINQ.RunPartitioningInLINQDemo();
+
+            // JoinInLINQ.RunJoinInLINQDemo();
+
+            ElementOperationsInLINQ.RunElementOperationsInLINQDemo();
         }
     }
 }
