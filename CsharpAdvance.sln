@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethods", "Extensi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQDemo", "LINQDemo\LINQDemo.csproj", "{F84668AE-CD9F-4B89-AABA-17DE45455A49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseLibraryFeatures", "BaseLibraryFeatures\BaseLibraryFeatures.csproj", "{B2D52065-5704-490F-93C1-DE5C4D56BC3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseLibraryFeatures", "BaseLibraryFeatures\BaseLibraryFeatures.csproj", "{B2D52065-5704-490F-93C1-DE5C4D56BC3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecurityCryptography", "SecurityCryptography\SecurityCryptography.csproj", "{FAB66C67-A9DB-4D31-B4A7-2DFF1BF188C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicType", "DynamicType\DynamicType.csproj", "{DBD87FF8-CB4E-42EF-B68B-EB305072CC2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{B2D52065-5704-490F-93C1-DE5C4D56BC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2D52065-5704-490F-93C1-DE5C4D56BC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2D52065-5704-490F-93C1-DE5C4D56BC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB66C67-A9DB-4D31-B4A7-2DFF1BF188C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB66C67-A9DB-4D31-B4A7-2DFF1BF188C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB66C67-A9DB-4D31-B4A7-2DFF1BF188C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB66C67-A9DB-4D31-B4A7-2DFF1BF188C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD87FF8-CB4E-42EF-B68B-EB305072CC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD87FF8-CB4E-42EF-B68B-EB305072CC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD87FF8-CB4E-42EF-B68B-EB305072CC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD87FF8-CB4E-42EF-B68B-EB305072CC2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
