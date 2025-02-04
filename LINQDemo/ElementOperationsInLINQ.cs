@@ -9,7 +9,7 @@ namespace LINQDemo
     /// <summary>
     /// Class to show ElementOperations In LINQ Demo
     /// </summary>
-    class ElementOperationsInLINQ
+    public class ElementOperationsInLINQ
     {
         /// <summary>
         /// Method to show Element Operations

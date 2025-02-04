@@ -9,12 +9,12 @@ namespace LINQDemo
     /// <summary>
     /// class to show Jointing in LINQ
     /// </summary>
-    class JoinInLINQ
+    public class JoinInLINQ
     {
         /// <summary>
         /// demo student class
         /// </summary>
-        class Student 
+        public class Student 
         {
             public int Id { get; set; }
             public string Name { get; set; }
@@ -24,7 +24,7 @@ namespace LINQDemo
         /// <summary>
         /// demo address class
         /// </summary>
-        class Address
+        public class Address
         {
             public int Id { get; set; }
             public string AddressLine { get; set; }
@@ -33,7 +33,7 @@ namespace LINQDemo
         /// <summary>
         /// demo mark class
         /// </summary>
-        class Mark
+        public class Mark
         {
             public int StuID { get; set; }
             public int TotalMark { get; set; }

@@ -19,7 +19,7 @@ namespace LambdaExpression
     /// <summary>
     /// Main program class that demonstrates the usage of Lambda Expression
     /// </summary>
-    class Program
+    public class Program
     {
         /// <summary>
         /// Entry point of the program that demonstrates working with lambda expressions

@@ -6,7 +6,7 @@ namespace FileSystemInDepth
     /// <summary>
     /// Demonstrates usage of DirectoryInfo to manage directories and retrieve information.
     /// </summary>
-    class DirectoryInfoClass
+    public class DirectoryInfoClass
     {
         #region Public Methods
 

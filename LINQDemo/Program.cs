@@ -13,7 +13,7 @@
         {
             // SyntaxOfLINQ.RunSyntaxOfLINQDemo();
 
-            SelectInLINQ.RunSelectInLINQDemo();
+            // SelectInLINQ.RunSelectInLINQDemo();
 
             // FilteringInLINQ.FilteringInLINQDemo();
 

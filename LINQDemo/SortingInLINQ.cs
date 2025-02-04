@@ -9,7 +9,7 @@ namespace LINQDemo
     /// <summary>
     /// Class to show sorting in LINQ
     /// </summary>
-    class SortingInLINQ
+    public class SortingInLINQ
     {
         // Sorting operators : OrderBy , OrderBYDescending , ThenBy , ThenBYDescending , Reverse
     

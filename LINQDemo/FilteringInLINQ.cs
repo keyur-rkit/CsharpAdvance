@@ -9,7 +9,7 @@ namespace LINQDemo
     /// <summary>
     ///  Class to show Filtering Demo
     /// </summary>
-    class FilteringInLINQ
+    public class FilteringInLINQ
     {
         /// <summary>
         /// Method to show Filtering

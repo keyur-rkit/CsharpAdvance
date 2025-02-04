@@ -29,7 +29,7 @@ namespace LINQDemo
     /// <summary>
     /// class to show select in LINQ
     /// </summary>
-    class SelectInLINQ
+    public class SelectInLINQ
     {
         /// <summary>
         /// method to show Select in LINQ

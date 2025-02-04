@@ -18,7 +18,7 @@ namespace DataSerialization
     /// <summary>
     /// Entry point for the program that demonstrates serialization and deserialization of book data.
     /// </summary>
-    class Program
+    public class Program
     {
         /// <summary>
         /// Main method that performs serialization and deserialization of book objects.

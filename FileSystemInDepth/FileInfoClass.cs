@@ -10,7 +10,7 @@ namespace FileSystemInDepth
     /// <summary>
     /// Demonstrates usage of FileInfo to manage files and retrieve file properties.
     /// </summary>
-    class FileInfoClass
+    public class FileInfoClass
     {
         #region Public Methods
 

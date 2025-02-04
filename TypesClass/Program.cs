@@ -14,7 +14,7 @@
     /// <summary>
     /// Represents a Dog that inherits from the Animal class and implements the Run method.
     /// </summary>
-    class Dog : Animal
+    public class Dog : Animal
     {
         /// <summary>
         /// Executes the Run method for the Dog class, printing a message to the console.

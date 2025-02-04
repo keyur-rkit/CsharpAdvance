@@ -9,7 +9,7 @@ namespace LINQDemo
     /// <summary>
     /// class to show different syntax of LINQ
     /// </summary>
-    class SyntaxOfLINQ
+    public class SyntaxOfLINQ
     {
         /// <summary>
         /// method to show different syntax of LINQ

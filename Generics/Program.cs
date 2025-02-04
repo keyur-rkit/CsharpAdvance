@@ -23,7 +23,7 @@
     /// Defines the operations of a menu interface that takes generic data type.
     /// </summary>
     /// <typeparam name="T">The data type for the menu order (e.g., string, int).</typeparam>
-    interface IMenu<T>
+    public interface IMenu<T>
     {
         /// <summary>
         /// Processes the order based on the generic data type.
@@ -35,7 +35,7 @@
     /// <summary>
     /// Represents a hotel menu where orders are placed with a string (food item name).
     /// </summary>
-    class Hotel1 : IMenu<string>
+    public class Hotel1 : IMenu<string>
     {
         /// <summary>
         /// Processes the order by food item name.
@@ -50,7 +50,7 @@
     /// <summary>
     /// Represents a hotel menu where orders are placed with an integer (food item ID).
     /// </summary>
-    class Hotel2 : IMenu<int>
+    public class Hotel2 : IMenu<int>
     {
         /// <summary>
         /// Processes the order by food item ID.
@@ -65,7 +65,7 @@
     /// <summary>
     /// Entry point of the program that demonstrates generic classes, methods, and interfaces.
     /// </summary>
-    class Program
+    public class Program
     {
         /// <summary>
         /// Compares two values of the same type for equality.

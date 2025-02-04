@@ -47,7 +47,7 @@ namespace LINQDemo
     /// <summary>
     /// Class to show Quantifier In LINQ
     /// </summary>
-    class QuantifierInLINQ
+    public class QuantifierInLINQ
     {
         /// <summary>
         /// Method for QuantifierInLINQ

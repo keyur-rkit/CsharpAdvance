@@ -3,7 +3,7 @@
     /// <summary>
     /// Main class to demonstrate file system operations using various classes like DirectoryInfo, FileInfo, etc.
     /// </summary>
-    class Program
+    public class Program
     {
         #region Public Methods
 

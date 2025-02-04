@@ -6,7 +6,7 @@ namespace ExtensionMethods
     /// <summary>
     /// Entry point of the program that demonstrates the use of extension methods.
     /// </summary>
-    class Program
+    public class Program
     {
         /// <summary>
         /// Main method that demonstrates the usage of extension methods.

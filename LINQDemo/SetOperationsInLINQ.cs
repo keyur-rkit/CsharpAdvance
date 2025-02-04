@@ -9,7 +9,7 @@ namespace LINQDemo
     /// <summary>
     /// class to show Set Operations
     /// </summary>
-    class SetOperationsInLINQ
+    public class SetOperationsInLINQ
     {
         /// <summary>
         /// method to show Set Operations
