@@ -2,6 +2,9 @@
 
 namespace DynamicType
 {
+    /// <summary>
+    /// Boook class 
+    /// </summary>
     public class Book
     {
         public dynamic Id { get; set; }
@@ -9,14 +12,25 @@ namespace DynamicType
 
     }
 
+    /// <summary>
+    /// Entry point for the program
+    /// </summary>
     public class Program
     {
-
+        /// <summary>
+        /// Method to return dynamic type
+        /// </summary>
+        /// <param name="dynamicValue"></param>
+        /// <returns></returns>
         public static dynamic ReturnType (dynamic dynamicValue)
         {
             return dynamicValue.GetType();
         }
 
+        /// <summary>
+        /// Main method that perform dynamic type
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             dynamic dynamicInt = 107;

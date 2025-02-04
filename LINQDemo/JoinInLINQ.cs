@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace LINQDemo
 {
-
+    /// <summary>
+    /// class to show Jointing in LINQ
+    /// </summary>
     class JoinInLINQ
     {
+        /// <summary>
+        /// demo student class
+        /// </summary>
         class Student 
         {
             public int Id { get; set; }
@@ -16,18 +21,27 @@ namespace LINQDemo
             public int AddressId { get; set; }
         }
 
+        /// <summary>
+        /// demo address class
+        /// </summary>
         class Address
         {
             public int Id { get; set; }
             public string AddressLine { get; set; }
         } 
 
+        /// <summary>
+        /// demo mark class
+        /// </summary>
         class Mark
         {
             public int StuID { get; set; }
             public int TotalMark { get; set; }
         }
 
+        /// <summary>
+        /// Method to show Joining in LINQ
+        /// </summary>
         public static void RunJoinInLINQDemo()
         {
             // Join Operators : Inner JOIN , Group JOIN, Left JOIN

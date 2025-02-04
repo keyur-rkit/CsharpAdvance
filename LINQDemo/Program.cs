@@ -1,12 +1,19 @@
 ﻿namespace LINQDemo
 {
+    /// <summary>
+    /// Entry point of LINQDemo
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// main method to execute
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             // SyntaxOfLINQ.RunSyntaxOfLINQDemo();
 
-            // SelectInLINQ.RunSelectInLINQDemo();
+            SelectInLINQ.RunSelectInLINQDemo();
 
             // FilteringInLINQ.FilteringInLINQDemo();
 
@@ -20,7 +27,7 @@
 
             // JoinInLINQ.RunJoinInLINQDemo();
 
-            ElementOperationsInLINQ.RunElementOperationsInLINQDemo();
+            // ElementOperationsInLINQ.RunElementOperationsInLINQDemo();
         }
     }
 }

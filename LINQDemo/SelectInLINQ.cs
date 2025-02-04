@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace LINQDemo
 {
+    /// <summary>
+    /// demo student class
+    /// </summary>
     public class Student
     {
         public int Id { get; set; }
@@ -13,6 +16,9 @@ namespace LINQDemo
         public string Email { get; set; }
     }
 
+    /// <summary>
+    /// demo employee class
+    /// </summary>
     public class Employee
     {
         public int EmpId { get; set; }
@@ -20,8 +26,14 @@ namespace LINQDemo
         public string EmpEmail { get; set; }
     }
     
+    /// <summary>
+    /// class to show select in LINQ
+    /// </summary>
     class SelectInLINQ
     {
+        /// <summary>
+        /// method to show Select in LINQ
+        /// </summary>
         public static void RunSelectInLINQDemo()
         {
 
@@ -70,7 +82,7 @@ namespace LINQDemo
             // SelectMany
             List<string> names = new List<string> { "Keyur", "Hit" };
 
-            var selectManyMethod = names.Select(n => n).ToList();
+            var selectManyMethod = names.SelectMany(n => n).ToList();
 
             var selectManyQuery = (from name in names
                                    from ch in name

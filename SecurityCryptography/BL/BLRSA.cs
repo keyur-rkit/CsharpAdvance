@@ -3,8 +3,17 @@ using System.Text;
 
 namespace SecurityCryptography.BL
 {
+    /// <summary>
+    /// Class with RSA relaed methods
+    /// </summary>
     public class BLRSA
     {
+        /// <summary>
+        /// Encrypt method
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="publicKey"></param>
+        /// <returns>Encrypted string</returns>
         static public string Encrypt(string data, string publicKey)
         {
             try
@@ -28,6 +37,12 @@ namespace SecurityCryptography.BL
             }
         }
 
+        /// <summary>
+        /// Decrypt Method
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="privateKey"></param>
+        /// <returns>Decrypted streing</returns>
         static public string Decrypt(string data, string privateKey)
         {
             try

@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace LINQDemo
 {
+    /// <summary>
+    /// class to show Partitioning in LINQ
+    /// </summary>
     class PartitioningInLINQ
     {
+        /// <summary>
+        /// method to show Partitioning in LINQ
+        /// </summary>
         public static void RunPartitioningInLINQDemo()
         {
             // Partitioning Operators : Take, TakeWhile , Skip, SkipWhile

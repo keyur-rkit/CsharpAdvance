@@ -3,11 +3,18 @@ using System.Text;
 
 namespace SecurityCryptography.BL
 {
+    /// <summary>
+    /// class for method related to AES
+    /// </summary>
     public class BLAES
     {
         private static AesCryptoServiceProvider _objAes = new AesCryptoServiceProvider();
 
-        // Method to generate a random AES key and IV
+        /// <summary>
+        /// Method to generate a random AES key and IV
+        /// </summary>
+        /// <param name="keySize"></param>
+        /// <returns>key and iv</returns>
         public static (string key, string iv) GenerateKeyAndIV(int keySize = 128)
         {
             using (Aes aesAlg = Aes.Create())
@@ -24,7 +31,13 @@ namespace SecurityCryptography.BL
             }
         }
 
-        // Encrypt method
+        /// <summary>
+        /// Encrypt method
+        /// </summary>
+        /// <param name="plainText"></param>
+        /// <param name="key"></param>
+        /// <param name="iv"></param>
+        /// <returns>Encrypted String</returns>
         public static string Encrypt(string plainText, string key, string iv)
         {
 
@@ -43,7 +56,13 @@ namespace SecurityCryptography.BL
 
         }
 
-        // Decrypt method
+        /// <summary>
+        /// Decrypt method
+        /// </summary>
+        /// <param name="cipherText"></param>
+        /// <param name="key"></param>
+        /// <param name="iv"></param>
+        /// <returns>Decrypted string</returns>
         public static string Decrypt(string cipherText, string key, string iv)
         {
             byte[] bytes = Convert.FromBase64String(cipherText);

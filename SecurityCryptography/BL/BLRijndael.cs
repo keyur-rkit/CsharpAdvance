@@ -3,11 +3,19 @@ using System.Text;
 
 namespace SecurityCryptography.BL
 {
+    /// <summary>
+    /// class for methods related Rijndael
+    /// </summary>
     public class BLRijndael
     {
         private static RijndaelManaged _objRijndael = new RijndaelManaged();
 
-        // Method to generate a random Rijndael key and IV
+        /// <summary>
+        /// Method to generate a random Rijndael key and IV
+        /// </summary>
+        /// <param name="keySize"></param>
+        /// <param name="blockSize"></param>
+        /// <returns>key and iv</returns>
         public static (string key, string iv) GenerateKeyAndIV(int keySize = 256, int blockSize = 128)
         {
             using (Rijndael rijndaelAlg = new RijndaelManaged())
@@ -25,7 +33,13 @@ namespace SecurityCryptography.BL
             }
         }
 
-        // Encrypt method
+        /// <summary>
+        ///  Encrypt method
+        /// </summary>
+        /// <param name="plainText"></param>
+        /// <param name="key"></param>
+        /// <param name="iv"></param>
+        /// <returns>Encrypted String</returns>
         public static string Encrypt(string plainText, string key, string iv)
         {
             byte[] bytes = Encoding.UTF8.GetBytes(plainText);
@@ -42,7 +56,13 @@ namespace SecurityCryptography.BL
             }
         }
 
-        // Decrypt method
+        /// <summary>
+        /// Decrypt method
+        /// </summary>
+        /// <param name="cipherText"></param>
+        /// <param name="key"></param>
+        /// <param name="iv"></param>
+        /// <returns>Decrypted string</returns>
         public static string Decrypt(string cipherText, string key, string iv)
         {
             byte[] bytes = Convert.FromBase64String(cipherText);

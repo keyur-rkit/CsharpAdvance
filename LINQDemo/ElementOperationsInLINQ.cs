@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace LINQDemo
 {
+    /// <summary>
+    /// Class to show ElementOperations In LINQ Demo
+    /// </summary>
     class ElementOperationsInLINQ
     {
+        /// <summary>
+        /// Method to show Element Operations
+        /// </summary>
         public static void RunElementOperationsInLINQDemo()
         {
             // Element operators : ElementAt , ElementAtOrDefault , First , FirstOrDefault 

@@ -13,11 +13,11 @@
         /// <param name="args">Command line arguments (if any).</param>
         public static void Main(string[] args)
         {
-            // DirectoryInfoClass.RunDirectoryInfoClassDemo();
+            DirectoryInfoClass.RunDirectoryInfoClassDemo();
 
             // FileInfoClass.RunFileInfoClassDemo();
 
-            OtherFileClass.RunOtherFileClassDemo();
+            // OtherFileClass.RunOtherFileClassDemo();
 
         }
 

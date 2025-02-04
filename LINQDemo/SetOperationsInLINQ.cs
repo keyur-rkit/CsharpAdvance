@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace LINQDemo
 {
+    /// <summary>
+    /// class to show Set Operations
+    /// </summary>
     class SetOperationsInLINQ
     {
+        /// <summary>
+        /// method to show Set Operations
+        /// </summary>
         public static void RunSetOperationsInLINQDemo()
         {
             // set operations : Distinct, Expect, Intersect, Union

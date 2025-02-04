@@ -3,11 +3,17 @@ using System.Text;
 
 namespace SecurityCryptography.BL
 {
+    /// <summary>
+    /// Class to contain method related to des
+    /// </summary>
     public class BLDES
     {
         private static DESCryptoServiceProvider _objDes = new DESCryptoServiceProvider();
 
-        // Method to generate a random DES key and IV
+        /// <summary>
+        /// Method to generate a random DES key and IV
+        /// </summary>
+        /// <returns>key and iv</returns>
         public static (string key, string iv) GenerateKeyAndIV()
         {
             using (DES desAlg = DES.Create())
@@ -23,7 +29,13 @@ namespace SecurityCryptography.BL
             }
         }
 
-        // Encrypt method
+        /// <summary>
+        /// Encrypt method
+        /// </summary>
+        /// <param name="plainText"></param>
+        /// <param name="key"></param>
+        /// <param name="iv"></param>
+        /// <returns>Encrypted string</returns>
         public static string Encrypt(string plainText, string key, string iv)
         {
             byte[] bytes = Encoding.UTF8.GetBytes(plainText);
@@ -40,7 +52,13 @@ namespace SecurityCryptography.BL
             }
         }
 
-        // Decrypt method
+        /// <summary>
+        /// Decrypt method
+        /// </summary>
+        /// <param name="cipherText"></param>
+        /// <param name="key"></param>
+        /// <param name="iv"></param>
+        /// <returns>Decrypted string</returns>
         public static string Decrypt(string cipherText, string key, string iv)
         {
             byte[] bytes = Convert.FromBase64String(cipherText);

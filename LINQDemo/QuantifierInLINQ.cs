@@ -6,20 +6,36 @@ using System.Threading.Tasks;
 
 namespace LINQDemo
 {
+    /// <summary>
+    /// demo person class with Custom equality comparer
+    /// </summary>
     public class Person
     {
         public string Name { get; set; }
         public int Age { get; set; }
 
-        // Custom equality comparer
+        /// <summary>
+        /// Custom equality comparer class
+        /// </summary>
         public class PersonComparer : IEqualityComparer<Person>
         {
+            /// <summary>
+            /// Custom equality comparer method Equals
+            /// </summary>
+            /// <param name="x"></param>
+            /// <param name="y"></param>
+            /// <returns></returns>
             public bool Equals(Person x, Person y)
             {
                 if (x == null || y == null) return false;
                 return x.Name == y.Name && x.Age == y.Age;
             }
 
+            /// <summary>
+            /// Custom equality comparer method for GetHashCode
+            /// </summary>
+            /// <param name="obj"></param>
+            /// <returns></returns>
             public int GetHashCode(Person obj)
             {
                 if (obj == null) return 0;
@@ -27,8 +43,15 @@ namespace LINQDemo
             }
         }
     }
+
+    /// <summary>
+    /// Class to show Quantifier In LINQ
+    /// </summary>
     class QuantifierInLINQ
     {
+        /// <summary>
+        /// Method for QuantifierInLINQ
+        /// </summary>
         public static void RunQuantifierInLINQDemo()
         {
             // Quantifier Operators : All , Any, Contains

@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace LINQDemo
 {
+    /// <summary>
+    ///  Class to show Filtering Demo
+    /// </summary>
     class FilteringInLINQ
     {
+        /// <summary>
+        /// Method to show Filtering
+        /// </summary>
         public static void FilteringInLINQDemo()
         {
             // Filtering operators : Where , OfType 

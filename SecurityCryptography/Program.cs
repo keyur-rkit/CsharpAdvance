@@ -3,8 +3,15 @@ using System.Security.Cryptography;
 
 namespace SecurityCryptography
 {
+    /// <summary>
+    /// Entry point
+    /// </summary>
     public class Program
     {
+        /// <summary>
+        /// First method to execute
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             Console.Write("Enter input : ");
@@ -34,6 +41,10 @@ namespace SecurityCryptography
 
         }
 
+        /// <summary>
+        /// method to run RSA methods
+        /// </summary>
+        /// <param name="inputData"></param>
         public static void RunRSADemo(string inputData)
         {
             // Generate a new RSA key pair
@@ -51,6 +62,10 @@ namespace SecurityCryptography
             }
         }
 
+        /// <summary>
+        /// method to run AES methods
+        /// </summary>
+        /// <param name="inputData"></param>
         public static void RunAESDemo(string inputData)
         {
             var (aesKey, aesIv) = BLAES.GenerateKeyAndIV(128);
@@ -64,6 +79,10 @@ namespace SecurityCryptography
             Console.WriteLine($"{BLAES.Decrypt(encryptedData, aesKey, aesIv )}");
         }
 
+        /// <summary>
+        /// method to run DES methods
+        /// </summary>
+        /// <param name="inputData"></param>
         public static void RunDESDemo(string inputData)
         {
             var (desKey, desIv) = BLDES.GenerateKeyAndIV();
@@ -77,6 +96,10 @@ namespace SecurityCryptography
             Console.WriteLine($"{BLDES.Decrypt(encryptedData, desKey, desIv)}");
         }
 
+        /// <summary>
+        /// method to run Rijndael methods
+        /// </summary>
+        /// <param name="inputData"></param>
         public static void RunRijndaelDemo(string inputData)
         {
             var (rijndaelKey, rijndaelIv) = BLRijndael.GenerateKeyAndIV();

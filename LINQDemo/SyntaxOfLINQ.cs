@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace LINQDemo
 {
+    /// <summary>
+    /// class to show different syntax of LINQ
+    /// </summary>
     class SyntaxOfLINQ
     {
+        /// <summary>
+        /// method to show different syntax of LINQ
+        /// </summary>
         public static void RunSyntaxOfLINQDemo()
         {
             List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };

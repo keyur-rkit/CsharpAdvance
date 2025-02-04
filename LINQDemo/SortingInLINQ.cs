@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace LINQDemo
 {
+    /// <summary>
+    /// Class to show sorting in LINQ
+    /// </summary>
     class SortingInLINQ
     {
         // Sorting operators : OrderBy , OrderBYDescending , ThenBy , ThenBYDescending , Reverse
     
+        /// <summary>
+        /// method to show Sorting in LINQ
+        /// </summary>
         public static void RunSortinhInLINQDemo()
         {
             List<int> nums = new List<int> { 5, 8, 7, 4, 1, 10, 9, 6, 4, 1, 8 };
