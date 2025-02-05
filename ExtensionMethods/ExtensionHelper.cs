@@ -16,7 +16,7 @@ namespace ExtensionMethods
         /// <param name="items">The list of items to be printed.</param>
         public static void Print<T>(this List<T> items)
         {
-            foreach (var item in items)
+            foreach (T item in items)
             {
                 Console.WriteLine(item);
             }

@@ -3,7 +3,7 @@
     /// <summary>
     /// Represents an abstract class for animals.
     /// </summary>
-    abstract class Animal
+    public abstract class Animal
     {
         /// <summary>
         /// Defines an abstract method for running.

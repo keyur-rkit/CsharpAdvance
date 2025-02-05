@@ -20,9 +20,9 @@ namespace LINQDemo
 
             Console.WriteLine("Query Syntax");
 
-            var querySyntax = from num in numbers
+            List<int> querySyntax = (from num in numbers
                               where num > 5
-                              select num;
+                              select num).ToList();
 
             foreach (int num in querySyntax)
             {
@@ -32,7 +32,7 @@ namespace LINQDemo
 
             Console.WriteLine("Method Syntax");
 
-            var methodSyntax = numbers.Where(num => num % 2 == 0);
+            List<int> methodSyntax = numbers.Where(num => num % 2 == 0).ToList();
 
             foreach (int num in methodSyntax)
             {
@@ -42,7 +42,7 @@ namespace LINQDemo
 
             Console.WriteLine("Mixed Syntax");
 
-            var mixedSyntax = (from num in numbers
+            int mixedSyntax = (from num in numbers
                                select num).Max();
 
             Console.WriteLine(mixedSyntax);

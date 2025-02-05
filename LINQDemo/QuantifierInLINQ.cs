@@ -88,7 +88,7 @@ namespace LINQDemo
                     new Person { Name = "Hit", Age = 20 }
                 };
 
-            var comparer = new Person.PersonComparer();
+            Person.PersonComparer comparer = new Person.PersonComparer();
 
             // Using Contains with custom comparer
             bool isPersonExists = people.Contains(new Person { Name = "Keyur", Age = 21 }, comparer);

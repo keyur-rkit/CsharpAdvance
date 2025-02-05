@@ -23,24 +23,24 @@ namespace LINQDemo
             List<string> names = new List<string> { "Keyur" , "Hit" , "Meet" };
 
             // ElementAt , ElementAtOrDefault
-            var elementAt = nums.ElementAt(0);
-            var elementAtOrDefaultNums = nums.ElementAtOrDefault(-1);
-            var elementAtOrDefaultNames= names.ElementAtOrDefault(-1);
+            int elementAt = nums.ElementAt(0);
+            int elementAtOrDefaultNums = nums.ElementAtOrDefault(-1);
+            string elementAtOrDefaultNames= names.ElementAtOrDefault(-1);
 
             // First , FirstOrDefault
-            var first = nums.First(n => n > 3);
-            var firstOrDefaultNums = nums.FirstOrDefault(n => n > 9);
-            var firstOrDefaultNamems = names.FirstOrDefault(n => n.Length > 6);
+            int first = nums.First(n => n > 3);
+            int firstOrDefaultNums = nums.FirstOrDefault(n => n > 9);
+            string firstOrDefaultNamems = names.FirstOrDefault(n => n.Length > 6);
 
             // Last , LastOrDefault
-            var last = nums.Last();
-            var lastOrDefaultNums = nums.LastOrDefault(n => n > 9);
-            var lastOrDefaultNames = names.LastOrDefault(n => n.Length > 9);
+            int last = nums.Last();
+            int lastOrDefaultNums = nums.LastOrDefault(n => n > 9);
+            string lastOrDefaultNames = names.LastOrDefault(n => n.Length > 9);
 
             // Single , SingleOrDefault
-            var single = nums.Single(n => n < 2);
-            var singleOrDefaultNums = nums.SingleOrDefault(n => n < -1);
-            var singleOrDefaultNamems = names.SingleOrDefault(n => n.Length > 6);
+            int single = nums.Single(n => n < 2);
+            int singleOrDefaultNums = nums.SingleOrDefault(n => n < -1);
+            string singleOrDefaultNamems = names.SingleOrDefault(n => n.Length > 6);
 
             Console.WriteLine();
             Console.ReadLine();

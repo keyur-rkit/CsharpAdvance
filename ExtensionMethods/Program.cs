@@ -31,7 +31,7 @@ namespace ExtensionMethods
             books.Print();
 
             // Most LINQ methods are Extension Methods
-            var longNameBooks = books.Where(b => b.Length > 20);
+            List<string> longNameBooks = books.Where(b => b.Length > 20).ToList();
 
             Console.WriteLine();
 

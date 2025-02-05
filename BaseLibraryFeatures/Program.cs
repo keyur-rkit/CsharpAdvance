@@ -14,7 +14,7 @@ namespace BaseLibraryFeatures
         {
             string path = @"F:\Keyur-417\Code\CsharpAdvance\BaseLibraryFeatures\Data\Test.txt";
 
-            using(var cw = new CustomWriter(path))
+            using(CustomWriter cw = new CustomWriter(path))
             {
                 cw.WriteLine("this is some dummy data!");
                 cw.WriteLine("this is second line of dummy data!!");

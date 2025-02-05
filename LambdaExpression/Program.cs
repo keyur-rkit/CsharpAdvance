@@ -84,10 +84,10 @@ namespace LambdaExpression
             };
 
             // Using Lambda Expression to sort students by their names
-            var newDetails = details.OrderBy(x => x.stuName);
+            List<Student> newDetails = details.OrderBy(x => x.stuName).ToList();
 
             // Displaying the ordered list of students
-            foreach (var value in newDetails)
+            foreach (Student value in newDetails)
             {
                 Console.WriteLine(value.RollNo + " " + value.stuName);
             }

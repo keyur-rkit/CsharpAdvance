@@ -50,21 +50,21 @@ namespace LINQDemo
 
             Console.WriteLine("Query and method to select all :");
 
-            var selectAllQuery = (from stu in students
+            List<Student> selectAllQuery = (from stu in students
                                  select stu).ToList();
 
-            var selectAllMethod = students.ToList();
+            List<Student> selectAllMethod = students.ToList();
 
             Console.WriteLine("Query and method to select some value :");
 
-            var selectSomeQuery = (from stu in students
+            List<int> selectSomeQuery = (from stu in students
                                    select stu.Id).ToList();
 
-            var selectSomeMethod = students.Select(stu => (stu.Id,stu.Name)).ToList();
+            List<(int,string)> selectSomeMethod = students.Select(stu => (stu.Id,stu.Name)).ToList();
 
             Console.WriteLine("Query and Method to select Student objects to Employee :");
 
-            var selectToEmpQuery = (from stu in students
+            List<Employee> selectToEmpQuery = (from stu in students
                                     select new Employee()
                                     {
                                         EmpId = stu.Id,
@@ -72,7 +72,7 @@ namespace LINQDemo
                                         EmpEmail = stu.Email
                                     }).ToList();
 
-            var selectToEmpMethod = students.Select(stu => new Employee()
+            List<Employee> selectToEmpMethod = students.Select(stu => new Employee()
             {
                 EmpId = stu.Id,
                 EmpName = stu.Name,
@@ -82,13 +82,13 @@ namespace LINQDemo
             // SelectMany
             List<string> names = new List<string> { "Keyur", "Hit" };
 
-            var selectManyMethod = names.SelectMany(n => n).ToList();
+            List<char> selectManyMethod = names.SelectMany(n => n).ToList();
 
-            var selectManyQuery = (from name in names
+            List<char> selectManyQuery = (from name in names
                                    from ch in name
                                    select ch).ToList();
 
-            foreach (var student in selectAllQuery)
+            foreach (Student student in selectAllQuery)
             {
                 Console.WriteLine(student.Name);
             }
