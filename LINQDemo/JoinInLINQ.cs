@@ -103,22 +103,6 @@ namespace LINQDemo
                                     add.AddressLine,
                                     mark.TotalMark
                                 }).ToList();
-
-            var joinThreeMethod = students.Join(marks,
-                                            stu => stu.Id,
-                                            mark => mark.StuID,
-                                            (stu, mark) => new { stu, mark } )
-                                            .Join(addresses,
-                                            student => student.stu.AddressId,
-                                            address => address.Id,
-                                            (student , address) => new { student , address })
-                                            .Select( x => new
-                                            {
-                                                StudentName = x.student.stu.Name,
-                                                StudentAddress = x.address.AddressLine,
-                                                StudentMark = x.student.mark.TotalMark
-                                            })
-                                            .ToList();
             // Performs a join between 'students', 'marks', and 'addresses' collections based on matching keys, 
             // and selects the student's name, address, and total marks into a new list of anonymous objects.
 
@@ -144,20 +128,6 @@ namespace LINQDemo
                                  on stu.AddressId equals add.Id into stuGroup
                                  from stuAddress in stuGroup.DefaultIfEmpty()
                                  select new {stu , stuAddress }).ToList();
-
-            var leftJoinMethod = students.GroupJoin(addresses,
-                                                    stu => stu.AddressId,
-                                                    add => add.Id,
-                                                    (stu,add) => new 
-                                                    {
-                                                        stu,
-                                                        add
-                                                    }).SelectMany(x => x.add.DefaultIfEmpty(), 
-                                                    (stu,add)=> new 
-                                                    { 
-                                                        stu,
-                                                        add
-                                                    }).ToList();
 
             Console.WriteLine();
             Console.ReadLine();
