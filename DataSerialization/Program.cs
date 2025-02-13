@@ -68,7 +68,7 @@ namespace DataSerialization
             JArray bookArr = JArray.Parse(jsonBookArr);
             bookArr.ToList();
             Console.WriteLine("string to JSON array : ");
-            foreach (var item in bookArr)
+            foreach (JToken item in bookArr)
             {
                 Console.WriteLine(item);
             }

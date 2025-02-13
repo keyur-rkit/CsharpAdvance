@@ -11,23 +11,23 @@
         /// <param name="args"></param>
         public static void Main(string[] args)
         {
-            // SyntaxOfLINQ.RunSyntaxOfLINQDemo();
+            SyntaxOfLINQ.RunSyntaxOfLINQDemo();
 
-            // SelectInLINQ.RunSelectInLINQDemo();
+             SelectInLINQ.RunSelectInLINQDemo();
 
-            // FilteringInLINQ.FilteringInLINQDemo();
+             FilteringInLINQ.FilteringInLINQDemo();
 
-            // SortingInLINQ.RunSortinhInLINQDemo();
+             SortingInLINQ.RunSortinhInLINQDemo();
 
-            // QuantifierInLINQ.RunQuantifierInLINQDemo();
+             QuantifierInLINQ.RunQuantifierInLINQDemo();
 
-            // SetOperationsInLINQ.RunSetOperationsInLINQDemo();
+             SetOperationsInLINQ.RunSetOperationsInLINQDemo();
 
-            // PartitioningInLINQ.RunPartitioningInLINQDemo();
+             PartitioningInLINQ.RunPartitioningInLINQDemo();
 
-            // JoinInLINQ.RunJoinInLINQDemo();
+             JoinInLINQ.RunJoinInLINQDemo();
 
-            // ElementOperationsInLINQ.RunElementOperationsInLINQDemo();
+             ElementOperationsInLINQ.RunElementOperationsInLINQDemo();
         }
     }
 }

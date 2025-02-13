@@ -60,7 +60,7 @@ namespace LINQDemo
             List<int> selectSomeQuery = (from stu in students
                                    select stu.Id).ToList();
 
-            List<(int,string)> selectSomeMethod = students.Select(stu => (stu.Id,stu.Name)).ToList();
+            List<int> selectSomeMethod = students.Select(stu => stu.Id).ToList();
 
             Console.WriteLine("Query and Method to select Student objects to Employee :");
 

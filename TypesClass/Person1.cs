@@ -16,7 +16,7 @@ namespace TypesClass
         /// </summary>
         public void Run()
         {
-            Console.WriteLine("Run method called from partial class Person from Person2.cs");
+            Console.WriteLine("Run method called from partial class Person from Person1.cs");
         }
     }
 }
